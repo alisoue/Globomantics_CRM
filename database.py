@@ -24,14 +24,15 @@ class Database:
         with open(path, "r") as handle:
             import json
             self.data = json.load(handle)
-
+            
             # ALTERNATIVE IMPLEMENTATIONS: Using YAML or XML to load data
+           
             # import yaml
             # self.data = yaml.safe_load(handle)
 
-            # import xmltodict
-            # self.data = xmltodict.parse(handle.read())["root"]
-            # print(self.data)
+           #import xmltodict
+            #self.data = xmltodict.parse(handle.read())["root"]
+             #print(self.data)
 
 
     def balance(self, acct_id):

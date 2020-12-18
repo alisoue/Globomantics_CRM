@@ -15,8 +15,8 @@ app = Flask(__name__)
 
 # Toggle between JSON, YAML, and XML for testing
 # path = "data/db.yml"
-# path = "data/db.xml"
-path = "data/db.json"
+path = "data/db.xml"
+# path = "data/db.json"
 db = Database(path)
 
 
